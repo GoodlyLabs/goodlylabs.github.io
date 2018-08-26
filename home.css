@@ -1,0 +1,83 @@
+body, html{
+	height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.background {
+    background-image: url("images/background2.jpeg");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+    background-color: rgba(255,255,255,0.4);
+    padding-top: 2%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+a:link {
+	color: white;
+	font-size: 18px;
+}
+a:visited {
+	color: white;
+}
+a:hover {
+	color: white !important;
+}
+
+img.padding {
+	padding-top: 220px;
+	padding-left: 40px;
+}
+
+img.padding2 {
+}
+
+p.padding {
+	padding-top: 12px;
+	padding-left: 40px;
+}
+
+.mission {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 9%;
+	padding-right: 9%;
+	background-color: #0075C2;
+	color: white;
+	position: relative;
+}
+
+.content {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.frame {
+	display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+i {
+	font-size: 40px;
+}

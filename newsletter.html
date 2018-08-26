@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Newsletter</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="newsletter.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="header.js"></script>
+    <script src="untitled.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body style="font-family: 'Nunito Sans'">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="aboutUs.html" >About</a>
+      <a href="project_home.html">Projects</a>
+      <a href="newsletter.html" class="active">Newsletter</a>
+      <a href="team.html">Team</a>
+      <a href="#about">Join Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <img src="images/goodly_logo.png" style="float: right; width: 40px; padding-top: 5px; margin-right: 1%">
+    </div>
+    <!--nothing to search as of now, we can fix the search bar when it becomes necessary
+	  <form class="form-inline-2 my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search this page..." aria-label="Search">
+    </form>
+    -->
+    <center><h3>Newsletter</h3></center>
+    <div class="additional">
+      <center><h5 style="font-weight: bold">Quick Updates</h5></center>
+      <ul>
+        <li><a href="https://bids.berkeley.edu/events/future-and-social-science-text-sensors-symbolic-interaction-and-pro-social-design">Founder Nick Adams featured @ BIDS!</a></li>
+        <li><a href="https://www.edge.org/response-detail/26755">Still confused about TextThresher? Check this out!</a></li>
+        <li><a href="http://bids.berkeley.edu/news/scaling-content-analysis-text-thresher-joins-forces-hypothesis-and-crowdcrafting">TextThresher got funding!</a></li>
+        <li><a href="http://www.sfgate.com/bayarea/article/Police-often-provoke-protest-violence-UC-5704918.php">Come see Deciding Force in action!</a></li>
+        <li><a href="https://youtu.be/OJWMHzgCu3c?t=5h8m9s">Liberating Archives made it to DC</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <!--article-->
+      <h3 class="title">TextThresher’s Minimum Viable Product Complete</h3>
+      <p class="date" style="font-weight: bold">8.22.2017</p>
+      <p>The TextThresher team and I are excited to announce that – with support from the <a href="http://anno.fund/">Hypothesis Open Annotation Fund</a> and the <a href="https://sloan.org/">Sloan Foundation</a> – we have completed our work building software that allows researchers to enlist citizen scientists in the complex annotation of large text corpora.
+      <a href="#" id="post1-show" class="showLink" onclick="showHide('post1');return false;">Show more</a>
+      </p>
+      <div id="post1" class="more">
+        <p>Content analysis – the application of deep and broad tag sets to large corpora of text – has been a painstaking process for decades, usually requiring the close training of wave after wave of research assistants. But with the Annotator Content Analysis modules we’ve created (which are components of TextThresher), large annotation jobs that took several years can now be completed in several months by internet contributors. As we describe below, TextThresher works by organizing content analysis into an assembly line of tasks presented through volunteer science platforms like CrowdCrafting.<br>
+
+        <b><u>The Crowd Content Analysis Assembly Line with Pybossa</u></b><br class="subtitle">
+
+        Our team has re-organized traditional, slow-going content analysis into two steps, each with its own Pybossa-served task presenter (described in a <a href="https://web.hypothes.is/blog/fund-scaling-up-content-analysis/">previous post</a> as ‘Annotator Content Analysis modules’). A first round of contributors read longer documents like news articles and highlight the text units that correspond with just one high-level branch of a researcher’s larger semantic scheme. For example, these first round of contributors would highlight (in separate colors), all the words that describe ‘goings on at an Occupy encampment’, ‘government actions’, ‘protester initiated events’, or ‘police-initiated events’.
+        <img src="images/dfdemo.png">
+        Next, a second Pybossa-served task presenter (AKA, ACA module) displays those highlighted text units one at a time and guides contributors through a series of leading questions about the text. Those questions, pre-specified by the researcher are uniquely relevant to the type of text unit identified in Step 1. By answering questions and highlighting the words justifying their answers, contributors label and extract detailed variable/attribute information important to the researcher. Thus, the crowd completes work equivalent to content analysis – and much faster than a small research team could.
+        <img src="images/dfquiz.png">
+        This content analysis work is achievable without close training because TextThresher’s schemas reorganize the work into tasks of limited cognitive complexity. Instead of attempting to label long documents with any of a hundred or more tags, contributors are only directed to search the text for a few tags at a time. And in the second interface/module, contributors are only looking at rather small text units while they are directed to hunt for particular variable/attribute information.<br>
+
+        TextThresher can ingest and export annotations, so that it is interoperable with automated text processing algorithms. For instance, its ‘NLP hints’ feature allows contributors to see the computer’s guess at the right answer. For example: If a question begins with ‘Who’, the NLP hints feature will italicize the proper names in a document. If it begins with ‘Where’, contributors will see all of the location-relevant words italicized.<br>
+
+        <b><u>Technical Architecture</u></b><br class="subtitle">
+
+        TextThresher has a web-based interface that allows the researcher to import a corpus of documents and conceptual schema that organize structured tag sets into high-level topics and detailed questions. This interface – built using Django and PostgreSQL, and containerized using Docker – also allows the researcher to generate and upload batches of tasks to a Pybossa server. TextThresher’s Pybossa task presenters – written using the React and Redux frameworks, and built with webpack – are automatically deployed to Pybossa by TextThresher when it creates a project and uploads tasks. In addition to the TextThresher web app, a local version of Pybossa is provided for testing and experiments, and once projects are ready for remote access, they can be uploaded to a publicly available Pybossa server, such as Crowdcrafting. A <a href="https://github.com/Goodly/TextThresherTester">deployment repository</a> on Github makes it easy to install and run TextThresher on any machine (Mac, Windows, or Linux) running Docker.<br>
+
+        <b><u>What's Next</u></b><br class="subtitle">
+
+        TextThresher is just getting started. Future versions of the software will also include supervised machine learning features, reducing the amount of work humans must complete, and adding additional ways to provide hints for contributors. Initially, TextThresher is being used to parse more than 8000 news articles describing the events of the Occupy campaign. With complex multi-level data, researchers will be able to tease out the dynamics of police and protester interaction that lead to violence, negotiation, and everything in between. TextThresher is also being used by the PublicEditor project, which is organizing citizen science efforts to evaluate the news and establish the credibility of articles, journalists, and news sources. To learn more about how you can use TextThresher, email <a href="mailto:nickbadams@gmail.com">nickbadams@gmail.com</a>.<br>
+
+        <b><u>The Possibilities</u></b><br class="subtitle">
+        The possibilities for TextThresher extend as far as the availability of text data and the imaginations of researchers. Some will be interested in legal documents, others policy documents and speeches. Some may have less interest in a particular class of documents and more interest in units of text ranging across them—perhaps related to the construction and reproduction of gender, class, or ethnic categories. Some may wish to study students’ written work en masse to better understand educational outcomes or the email correspondence of non-governmental organizations to optimize communication flows.<br>
+
+        Galleries, libraries, archives, museums, and classrooms may also deploy TextThresher’s task presenters, advancing scientific literacy and engaging more people in social scientists’ efforts to better understand our world. Whatever the corpus and topic, TextThresher can help researchers generate rich, large databases from text – fast!<br>
+
+        <b><u>Pybossa/Crowdcrafting</u></b><br class="subtitle">
+        <a href="https://crowdcrafting.org/">Crowdcrafting</a> is a web-based service that invites volunteers to contribute to scientific projects developed by citizens, professionals, or institutions that need help to solve problems, analyze data, or complete challenging tasks that can’t be done by machines alone but require human intelligence. The platform is 100% open source—that is, its software is developed and distributed freely—and 100% open science, making scientific research accessible to everyone. Crowdcrafting uses its own <a href="https://pybossa.com/">Pybossa</a> software: an open source framework for crowdsourcing projects. Institutions like the British Museum, CERN, and United Nations (UNITAR) are also Pybossa users.</p>
+        <p><a href="#" id="post1-hide" class="hideLink" onclick="showHide('post1');return false;">Show Less</a></p>
+      </div>
+      <hr style="border: solid .5px #a9a9a9;">
+    </div>
+
+     <div class="content">
+      <!--article-->
+      <h3 class="title">TextThresher Lives!</h3>
+      <p class="date" style="font-weight: bold">12.17.2017</p>
+      <p>After two years of hard work building TextThresher, we are very pleased to announce that it's live! We're super excited to have you try it out, but first we'll give an explanation on what exactly it is, who it's for, and how to use it.<br>
+
+      <b><u>What is TextThresher?</u></b><br class="subtitle">
+      <a href="#" id="post2-show" class="showLink" onclick="showHide('post2');return false;">Show more</a>
+      </p>
+      <div id="post2" class="more">
+        <p>TextThresher is a mass collaboration software allowing researchers to direct hundreds of volunteers – working through the internet – to label tens of thousands of text documents according to all the concepts vital to researchers’ theories and questions. With TextThresher, projects that would have required a decade of effort, and the close training of wave after wave of research assistants, can be completed in about a year online.<br>
+
+        <b><u>How Will People Use It?</u></b><br class="subtitle">
+
+        TextThresher is specifically designed for large and complex content analysis jobs that cannot be completed with existing automated algorithms. It is the ideal tool whenever automated approaches to textual data fail to recognize concepts vital to social scientists’ intricate theories, fail to tease out ambiguous or contextualized meanings, or fail to effectively parse relationships among, or sequences of, social entities.<br>
+
+        If you are interested in performing a shallow sentiment analysis of tweets, or developing an exploratory topic model of some corpus, you won’t need TextThresher. If you have a few dozen interviews to analyze, TextThresher is probably overkill. But if you want to extract hierarchically organized, openly validated, research-grade records of related social entities and concepts appearing across thousands of longer documents, TextThresher is for you. Especially in this first beta version, it is ideally suited for the analysis of news events, historical trends, or the evolution of legal theories. Here’s how it works: <br>
+        
+        The crowd content analysis assembly line TextThresher enables is organized around two major steps. First, annotators identify (across the researcher’s documents) text units (words, phrases, sentences) that correspond with the (relatively small number of) nodes at the highest level of the researcher’s hierarchically-organized conceptual/semantic scheme. These high-level nodes describe a researcher’s units of analysis, the social units (be they individuals, events, organizations, etc.) described by variables and attributes at the lower-level nodes of the conceptual/semantic scheme. In contrast to old-style content analysis, an annotator using TextThresher does not even attempt the conceptually overwhelming task of applying dozens of different labels to a full document. They just label text units corresponding with the (usually) 3-6 highest level concepts important to a researcher. This is comparatively easy work.<br>
+
+        In the second step, TextThresher displays those much smaller text units, corresponding with just one case of one unit of analysis, to citizen scientists/ crowd workers, and guides them through a series of leading questions about the text unit. Since TextThresher already knows the text unit is about a certain type of unit of analysis (or ‘object’ to use computer science speak), it only asks questions prompting users to search for details about the variables/attributes of that unit of analysis. By answering this relatively short list of questions and highlighting the words justifying their answers, citizen scientists label the text exactly as highly-trained research assistants would. But their work goes much faster and they are more accurate, because (1) they are only reading relatively short text units, (2) they are only concerned to find a relatively short list of variables (that are guaranteed to be relevant for the text unit they are analyzing); and (3) the work is organized as a ‘reading comprehension’ task familiar to everyone who has graduated middle school.<br>
+
+        TextThresher uses a number of transparent approaches to validate annotators’ labels, including gold standard pre-testing, Bayesian voting weighted by annotator reputation scores, and active learning algorithms. All the labels are exportable as annotation objects consistent with W3C annotation standards, and maintain their full provenance. So, in addition to scaling up content analysis for all the ‘big text data’ out there, TextThresher also brings the old method into the light of ‘open science.’<br>
+
+        <b><u>How Do I Get It?</u></b><br class="subtitle">
+
+        Today, we are announcing that TextThresher lives. It moves data through all of its interfaces as it should. The interfaces are fully functional. (See Demo below.) And TextThresher can be deployed on Scifabric (PYBOSSA), our partner citizen (volunteer) science platform. In the weeks and months to come, we will be testing TextThresher’s user experience, refining our label validation algorithms, and using TextThresher to collect data for the GoodlyLabs’ DecidingForce and PublicEditor projects. Once we feel confident that TextThresher is working smoothly (probably around October 2017), we will invite researchers to apply to become beta users of the software. (If you already know you are excited to use TextThresher, feel free to shoot Nick an email and he will keep you updated about upcoming opportunities.) We hope to release TextThresher 1.0 to the general public in early 2018.<br>
+
+        <b><u>A Big Thanks!</u></b><br class="subtitle">
+
+        TextThresher would not exist without the support and hard work of many people. We wish to first thank our institutional sponsors. The Hypothesis “Open Annotation” Fund, the Alfred P. Sloan Foundation, and the Berkeley Institute for Data Science (BIDS) all provided seed funding that allowed us to hire creative and skilled developers. BIDS, too, provided workspace for meetings and support for Nick Adams. The D-Lab and the Digital Humanities @ Berkeley also provided essential resources when the project was in its very early stages.<br>
+
+        TextThresher’s viability also owes to the encouragement of the annotation and citizen science communities. Dan Whaley, Benjamin Young, Nick Stenning, and Jake Hartnell of Hypothes.is are especially to blame for motivating and guiding our early efforts. Daniel Lombraña of Scifabric, Chris Lintott of Zooniverse, and Jason Radford of Volunteer Science also bolstered our hopes that the citizen science community would appreciate and use our tools.<br>
+
+        And of course, TextThresher, would not exist without the collective efforts, lost sleep, and careful programming of our talented and dedicated development team. From our earliest prototype till today, we have been fueled by the voluntary and semi-voluntary efforts of students and freelance developers across the Berkeley campus and Bay Area. As the person who got it all started at a point when I could just barely script my way out of a paper bag, I (Nick) especially wish to thank Daniel Haas, Fady Shoukry, and Tyler Burton for their early efforts architecting TextThresher’s backend and frontend (and for believing in the vision).<br>
+
+        Steven Elleman deserves kudos for our rather sophisticated (if we do say so!) highlighter tool. Jasmine Deng has built the reading comprehension interface that makes TextThresher so easy to use compared to QDAS packages. Flora Xue, with the mentorship of the busy and brilliant Stefan van der Walt, has refactored our data model through multiple improving iterations. And we can all count on TextThresher to become increasingly efficient thanks to the human-computer interactions enabled by Manisha Sharma’s hand-rolled ‘NLP hints’ module.
+
+        All of this work has been helped along, too, by a number of volunteers like Allen Cao, Youdong Zhang, Aaron Culich, Arjun Mehta, Piyush Patil, and Vivian Fang who have taken on quick but essential tasks across the TextThresher codebase. Finally, I (Nick) have to express my deep gratitude for Norman Gilmore, our development team lead. Norman has not only played an essential role in architecting, writing, and improving code throughout TextThresher, he has also served as a patient and caring mentor to all of our developers, helping our team establish and maintain agile scrum practices, proper git etiquette, and a happy, grooving work rhythm. Thanks, Norman! And thanks to all our friends, family, and colleagues who have been rooting for us. <a href="tt.html">We did it!</a></p>
+        <p><a href="#" id="post2-hide" class="hideLink" onclick="showHide('post2');return false;">Show Less</a></p>
+      </div>
+      <hr style="border: solid .5px #a9a9a9;">
+    </div>
+    <div class="content">
+      <!--article-->
+      <h3 class="title">Building the Future</h3>
+      <p class="date" style="font-weight: bold">Founder's Message</p>
+      <p>I would like to establish a tradition of writing, at least annually, to all the members of the Goodly team – all our researchers, engineers, developers, contributors, advisors, citizen scientists, and volunteers. The general purpose of these messages will be to narrate where we are, what we’ve accomplished recently, and where we are going.<br>
+      The Goodly Institute and Goodly Labs were officially born in 2015. I filed the paperwork when it became clear to me that research and development work to improve society had no clear home in institutions of 
+      <a href="#" id="post3-show" class="showLink" onclick="showHide('post3');return false;">Show more</a>
+      </p>
+      <div id="post3" class="more">
+        <p>higher education, in government, or in the ecosystem of existing think tanks. The academics study what is, not what could be. Governments often resist (or at least elect not to fund) research that would give the public information and tools that might lead them to question (and eventually limit) their power. And existing think tanks are highly-invested in current organizations of political and policymaking power, the major political parties in particular. (Having loads of money, it turns out, does not buy one a clear analysis of what the world needs to flourish, much less a plan for accomplishing that.) So, I founded Goodly expecting that, over several years, we could begin building a different sort of think tank – one with a very broad-base of contributors and volunteers working toward goals defined not by the constraints of existing power, but by a greater vision of a future we could build together.<br>
+
+        But then, it seemed, the erosion of democracy began accelerating much faster than I had expected. It’s clear that we don’t have several years. We must come together now.<br>
+
+      Democracies need the results of the DecidingForce project now. Already, the project is showing how various police and protester interactions played out during the Occupy movement, with findings that describe how cities with different government types, police department capacities, and political cultures behave differently depending on upcoming elections, violent crime waves, and other city priorities. But the urgency of project’s second phase (utilization of TextThresher) is only growing. With TextThresher software launching this year, we will be able to further process the thousands of news accounts describing the US Occupy campaigns. And with richer, more granular data, we will be able to tease out sequences of police and protester interaction that lead to violence, to negotiation, or anything in between. Our findings will give the people and police better information with which to make wiser and more democratic decisions about the safe management of protest.<br>
+
+      Beyond analyzing protest, we are excited to see how other researchers will use TextThresher to test, refine, and improve theories about social phenomena that are described in the world’s massive archives of textual data. Social scientists and students will be able to parse political speech to identify the rhetorical patterns of demagoguery throughout history and into the present day. They will be able to track changes in social conceptions of identity characteristics across time and place, clearly demonstrating the fact that they are made up and can by re-made as we see fit. Scholars will be able to enlist hundreds or thousands of people in tracking the difference between what politicians say and what they do, and how judicial opinions evolve through court rulings. With TextThresher, we humans will finally be able to systematically analyze, at scale, what we are doing as we construct our reality. These richer understandings of ourselves are a prerequisite to effective change.<br>
+
+      With these first two projects, one can already observe Goodly’s principles in action. We inspire people to get involved in doing science. We take on new and great challenges. And, we avoid the sort of advocacy approach that drives analyses toward some particular (especially partisan) outcome; instead bringing rigorous scientific inquiry to problems that go to the core of what it means, and can mean, to live democratically.<br>
+
+      The principle of engaging the public in a rigorous social science is also apparent in the PublicEditor and DemoWatch projects. The former extends TextThresher software to engage thousands of people in the task of assessing the truth-value of news and journal articles. Use of these tools will simultaneously improve the quality of our discourse and the literacy of the population. The DemoWatch project deputizes citizens as sociological observers of ongoing protests to ensure that the DecidingForce project’s data are not significantly skewed by the media.<br>
+
+      Goodly will not stop there. More than just building a scientifically rigorous understanding of how we relate to one another democratically, Goodly seeks to actually build the democratic machinery of the future. We begin, as the Founders of this country did, with the legislative branch. Convening experts in democratic theory and online democracy/deliberation from institutions including MIT, Cambridge, and UC_Berkeley, the SamePage project is designed to build a scalable platform that will fundamentally reorganize the way “we the people” talk about and decide policy. With today’s many-to-many communication technology (think Facebook, etc.) it is obvious that we have outgrown the constraints that led the Founders to design the particular form of Representative government they codified in Article I of the Constitution. That form, in the eyes of nearly all people, has become so ‘gamed’ by adversarial, legally-bribed political parties  as to barely function. So, we are thinking ten years ahead, aiming to replace a system of zero-sum political debate and competition with a style of collective decision making based in well-organized, constructive, comprehensive policy discussion. We know we can do it. We have a plan to roll out the technology so that it is well tested, tuned, and trusted before we launch the electoral campaigns to replace the dysfunctional Congress.<br>
+
+      These plans – all of our plans – are ambitious. They are as grand as the challenges that democracies face. But they are not complete. We must carry them forward together. We’ll need your time, thoughts and energy. We’ll need feedback on the designs and user experience of our tools, and the engagement of citizens throughout the country and beyond. So do not imagine that we expect to come to, and then impose, easy solutions. This will be a massive team effort. And that’s exactly what democracy should be. Please join us.</p>
+        <p><a href="#" id="post3-hide" class="hideLink" onclick="showHide('post3');return false;">Show Less</a></p>
+      </div>
+      <hr style="border: solid .5px #a9a9a9;">
+    </div>
+    <div class="content">
+      <!--article-->
+      <h3 class="title">Why Goodly?</h3>
+      <p class="date" style="font-weight: bold">11.2.2017</p>
+      <p>Many of us find ourselves in a trap. We care about our families and friends, about our children and grandchildren, and their grandchildren, and all of their friends and family, too. We love to imagine them happy and thriving, yet, it seems there is very little we can do to help ensure they flourish. We can wish them well and provide them advice sometimes, perhaps gifts. But most of us spend 40 hours (or more) per week – the bulk of our life’s energy – doing work that can hardly hope to influence their lives for the better. Our economy simply does not reward good deeds. So, what are we to do with all this care in a world that does not reward it?</p>
+      <a href="#" id="post4-show" class="showLink" onclick="showHide('post4');return false;">Show more</a>
+      </p>
+      <div id="post4" class="more">
+       <p> Goodly wants to be the answer to that question. Few of us believe we can help future generations through the political system… and we are mostly right. But what if there was some way that each of us could spend just a few hours a month contributing to a wider effort, one that carefully organized all of our contributions into broad-spectrum change that would make life more livable for all of us and the generations to come? Goodly bets that we can do just that. And we’ve already started.<br>
+        
+        The key to social change, we have found, is not political action. It is not more persuasive debate. It is not physical force. It is what all these traditional paths to social change seek: legitimacy. Social change happens when new ideas ideas becomes legitimate – when most of us agree that the new ideas are right, proper, and authoritative. Everything Goodly does flows from this realization. <br>
+
+        Right now, nearly all of the institutions of our Democracy are experiencing an erosion of legitimacy. Congress is hardly more popular than ISIS. The legitimacy of the presidency, and the electoral processes determining that office, are openly questioned. The ostensibly independent judicial branch has become yet another arm of the two major political parties. And long before the “fake news” crisis, changes in the media landscape generated a new normal of lower quality reporting focusing excessive attention on matters that distract the public more than they inform us. Police, more and more, are seen as “bad guys,” too. Observe and note: it is nearly impossible to identify a government organization or institution thought vital to civic life that has not lost credibility and trust over the last several years.<br>
+
+        And yet, there is no plan – absolutely no plan – among those who work in these institutions to recover the lost trust. There is no plan because neither the public nor the people who work in these systems were trained to understand them holistically as part of a yet-broader set of systems. They were not trained to understand that legitimacy even exists, or that it is the basis of their power. On the contrary, they take the power of these institutions for granted and try to build their own power within them. What they don’t see, what they can’t fix, is the fact that all of their competition for power within those institutions has rendered them inefficient and deeply untrusted.<br> 
+
+        We cannot stand by and watch as democracy slowly decays. Goodly proposes that we engage the public, that “we the people” once again join together and work together to improve our media, reduce the violence between governments and their people, and build a set of governing processes that actually work. Goodly has already begun projects focused on all of these and we will ask for your help, more and more, in the months and years to come.<br>
+
+        Please join our mailing list. We will reach out from time to time, with increasing frequency as we build momentum. It will not be easy, but it will be worth it.</p>
+        <p><a href="#" id="post4-hide" class="hideLink" onclick="showHide('post4');return false;">Show Less</a></p>
+      </div>
+      <hr style="border: solid .5px #a9a9a9;">
+    </div>
+
+    <div class="content">
+      <!--article-->
+      <h3 class="title">Transformation of Data</h3>
+      <p class="date" style="font-weight: bold">12.17.2017</p>
+      <p>Living in the San Francisco Bay Area, one quickly develops an allergy to any claim of a ‘revolution’ in a particular field. But it is now abundantly clear to librarians, archivists, computer scientists, and many social scientists that we are in a transformational age. Terabytes of textual and video data are being created or scanned into existence everyday. While these data include silly tweets, they also include the archives of national libraries, news accounts of activities around the world, journal articles, online conversations, vital email correspondence, surveillance of crowds, videos of police encounters, and much more. If we can understand and measure  meaning from all of these data describing so much of human activity, we will finally be able to test and revise our most intricate theories of how the world is socially constructed through our symbolic interactions.</p>
+      <a href="#" id="post5-show" class="showLink" onclick="showHide('post5');return false;">Show more</a>
+      </p>
+      <div id="post5" class="more">
+       <p>But that’s a big ‘if.’ Natural language and video data, compared to other data computer scientists have been pushing around for decades, are incredibly difficult to work with. Computers were initially built for data that can be precisely manipulated as unambiguous electrical signals flowing through unambiguous logic gates. The meaning of the information encoded in our human languages, gestures, and embodied activities, however, is incredibly ambiguous and often opaque to a computer. We can program the computer to recognize certain “strings” of letters, and then to perform operations on them (much like the operator of Searle’s Chinese Room), but no one yet has programmed a computer to experience our human languages as we do. That doesn’t mean we don’t try. There are three basic approaches to helping computers understand human symbolic interaction, and language, in particular:
+        <ol>
+          <li>We can write rules telling them how to treat all the different multi-character strings (i.e. words) out there.</li>
+          <li>We can hope that general artificial intelligence will just “figure it out.”</li>
+          <li>We can show computers how we humans process language, and train them through an iterative process, to read and understand more like we do.</li>
+        </ol>
+        The first two approaches are doomed, and I’ll say more about why. The third approach provides a way forward, but it won’t be easy. It will require that researchers like us recruit hundreds or thousands of people (i.e., crowds) into our processes. So, unpacking this post’s title: our ability to make sense of and systematically analyze the dense, complex, manifold meaning inhering in now ubiquitous and massive textual and video data will depend on our ability to enlist the help of many other humans who already know how to understand language, situations, emotion, sarcasm, metaphor, the pacing of events, and all the other aspects of being an agentic organism in a socially constructed world – all the stuff of social life that computers just won’t ever understand without our help.<br>
+
+        <b><u>Not Enough Rules</u></b><br class="subtitle">
+
+        The great (and horrible) thing about computers is that – as long as you use the magic words of their ‘artificial languages’ – they will do exactly what you tell them to do. For many, this fact leads to the quick conclusion that we can just write rules telling computers how to process all of our more ambiguous ‘natural languages.’ Feed it a dictionary. Feed it a thesaurus. Tell it how grammar works. Then, they imagine, the computer will be able to speak and write as we do … Would that it were so easy.<br>
+
+        Unfortunately, the natural languages we use to communicate everyday are so much more ambiguous than the artificial languages computers read that it is only a modest exaggeration to suggest that writing rules allowing a computer to pass a Turing test (i.e. to so aptly converse with a human that it could fool that human into believing it too was human) would require us to write almost as many rules as there are natural language sentences. Consider, for example, the seemingly easy challenge of parsing an address field from a thousand survey forms. The first several characters before a space are the street number, right? And then the characters after the space are the street name, no? Well… sadly, the natural world is not so well organized, even for highly structured data like addresses. Sometimes addresses start with a building name, not the street address. Sometimes, too, contrary to what we might think, addresses include two separate numeric strings, or even alphabetical characters in the street number string. In fact, there are over 40 exception rules necessary to reliably parse something as simple as the address field of a standard form.<br>
+
+        In fact, the computer’s stupid-perfect following of instructions has inspired a genre of blog posts entitled “Falsehoods Programmers Believe About ______.”  A Google search of this phrase should provide readers with ample humility about the plausibility of writing rules to teach computers natural language. If relatively simple tasks like parsing addresses, time, names, and geographic locations from structured forms generate so much frustration, imagine the difficulties inherent in parsing sentences like: “She saw him on the mountain with binoculars.” Did he have the binoculars? Was she on the mountain? Perhaps a sentence three paragraphs earlier explained that she was carrying the binoculars while walking along the beach. But, when should the computer compare information across such distant sentences?<br>
+
+        By the time even the most patient rule-writer has directed a computer to read just one newspaper, accounting for all the “what they really meant to say” situations, the monumental effort will have produced countless contradictory rules along with many that are torturously complex. Moreover, they’re likely to be poorly designed for the next newspaper, let alone War and Peace, a Twitter feed, or transcripts of local radio news.<br>
+
+        Cognitive linguists would argue that the problem with the rule-writing approach is its distance from humans’ actual processing of language. The goal should not be to train the computer to behave like the operator of Searle’s Chinese room, but to train it to understand Chinese (or any natural language) like a fluent speaker. If our ultimate goal is to build computer programs to process terabytes of textual data as humans do, shouldn’t we be attempting to train computers to read them (and even their ambiguities) as we do?<br>
+
+        <b><u>Go is Easy</u></b><br class="subtitle">
+
+        People have become very excited lately by the development of “deep learning” artificial intelligence technology. Heralded for its ability to defeat humans in complex games like Chess and Go, the technology is also spookily appealing in its mimicry of the actual human brain. It does not include ancient structures like the hippocampus, nor is it directly connected to a breathing, walking, eating mammal. But it does use simulated neurons and neural connections to learn much like we humans do. Our brains often (though not always) learn through a process of neural network potentiation via back-propagation. To sketch that out very simply: some network of neurons fires together in our brains whenever we think a particular thought, imagine a specific memory, or perform a singular task. If that firing does something sensible or useful for us, a chemical propagates back through all the neurons of the network to encourage those neurons to fire together in the future. To learn how to add numbers through this mechanism, for example, is to increase the (chemical) potential that a network of neurons performing the addition function will fire whenever we see two numbers with a ‘+’ sign between them. The computer brain behind “deep learning” behaves similarly. As it gets positive or negative feedback about its performance on some task, it increases or decreases the probability that it will perform similarly the next time it faces a similar task. (More on this below).<br>
+
+        People have become so excited about “deep learning” technology and its potential for parsing language data because it recently did something that seems very hard indeed: it beat the World Champion of Go, the most complex strategic game invented by humans. If a computer can beat one of our smartest humans at a very complex game, the reasoning goes, surely a computer can read the New York times and give us a juicy hot take on the latest scandal. Sadly, no.<br>
+
+        The success of “deep learning” depends crucially on domain constraints that do not resemble those of our wide open social world. In the simple world of Go, there is a clear winner and loser. The players can only make one of a several moves per turn. And the space of possible action (while more complex and dynamic than Chess or other games) is orders of magnitude smaller than in the vast social world. To understand why this matters, it’s helpful to first have an (at least hand-wavy) understanding of how AlphaGo, the winning computer, learned to play the game.<br>
+
+        As explained above, “deep learning” does its learning through simulated neural networks. The AlphaGo computer actually uses two such learning networks. One has the task of figuring out which position AlphaGo should play from, which position is most likely to lead to a win. The second has the task of gaming out (or simulating) the best move AlphaGo could make from any given position. These two networks communicate to determine AlphaGo’s best move from the best position, a thought process likely to seem familiar to anyone who has played the game. But writing rules for each of these neural networks, and their coordination on a single turn-taking, was not enough to make AlphaGo particularly good at the game.<br>
+
+        Just as our brains learn (i.e. potentiate the coordinated firing of neurons) based upon feedback, AlphaGo’s “deep learning” system also required feedback – a lot of it – to develop proficiency at the game. That feedback came in two forms: first it learned by comparing itself to excellent human players. When shown a Go board, its two neural networks would settle upon a move. Then it would learn what an identically-situated masterful human player did in the past. If it chose the same as the human, it was “rewarded” slightly, potentiating the two neural networks to perform similarly in future scenarios. Otherwise, it was “punished” slightly so that it would be less likely to make the same mistake again. This sort of learning is called “supervised machine learning” because humans (or at least data they have generated) stand over the shoulder of the machine and let it know when it is right or wrong.<br>
+
+        But even this training through millions of games played by many human masters was not enough to make AlphaGo great. Next, AlphaGo was programmed to train by playing against itself. In this step, the computer had no more humans to rely upon. It just knew the game very well, all the strategies it had learned and, crucially, what it meant to score points and win or lose. After several million games against itself, it learned to keep pursuing the strategies that allowed it to win, while eschewing the strategies that caused its clone to lose. This sort of learning – harkening back to behavioral social scientists like B.F. Skinner – is called ‘reinforcement’ learning. Even without human input, the rules for scoring in any well-defined game can be translated into ‘objective’ or ‘loss’ functions which provide feedback to the machine, reinforcing those behaviors more likely to lead to the objective of a win.<br>
+
+        By now readers probably have an inkling why Go is so easy compared to parsing a conversation or a news article. Even for formal political debates, there is no clear winner or loser, no clear method for scoring points. Neither does there seem to be obvious objective or loss functions that one could write in order to help a computer understand how to be a good conversationalist. Even a sensemaking task like accurately parsing a news article doesn’t seem to be one that can be boiled down to a concise list of rules. The social world is not a game, or at least not a single game (or well-defined list of games) with recognizable rules that players are  consistently incented to follow.<br>
+
+        As NYU cognitive psychologist and AI researcher Gary Marcus has put it: “In chess, there are only about 30 moves you can make at any one moment, and the rules are fixed. In Jeopardy [where the computer ‘Watson’ has also bested human champions] more than 95% of the answers are titles of Wikipedia pages. In the real world, the answer to any given question could be just about anything, and nobody has yet figured out how to scale AI to open-ended worlds at human levels of sophistication and flexibility.” One of the foundational thinkers of AI, Gerald Sussman, put it even more succinctly: “you can’t learn what you can’t represent.”</p>
+
+
+
+
+        <p><a href="#" id="post5-hide" class="hideLink" onclick="showHide('post5');return false;">Show Less</a></p>
+      </div>
+      <hr style="border: solid .5px #a9a9a9;">
+    </div>
+    <div class = "footer">
+      <p class = "text">Goodly Labs</p>
+      <p style="display: inline-block;">UC Berkeley Institute of Data Science</p>
+      <a style="display: inline-block; float: right" href = "https://www.linkedin.com/company/goodlylabs/" target="_blank" class="fa fa-linkedin"></a>
+      <a style="display: inline-block; float: right;" href = "https://www.facebook.com/goodlylabs/" target="_blank" class="fa fa-facebook"></a><br>
+      <a href = "mailto:info@goodlylabs.org" style="color: white">info@goodlylabs.org</a>
+  </div>
+  </body>
+</html>

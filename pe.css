@@ -1,0 +1,246 @@
+
+body{
+  font-family: Nunito Sans;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.tabs{
+  display: inline-block;
+  margin-left: 75px;
+  position: relative;
+
+  font-size: 35px;
+  font-style: normal;
+  font-family: Nunito Sans;
+}
+/*added below*/
+*{
+  box-sizing: border-box;
+}
+#txt {
+  font-size: 14px;
+  color: #1C4586;
+  font-weight: 200%;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+
+}
+
+#content {
+  color: #1C4586;
+  position: absolute;
+  float: left;
+  margin-right: 330px;
+  margin-left: 80px;
+  left:0; 
+  top:92px; 
+  bottom: 0;
+
+  /*width: 500px;*/
+}
+
+#sidebar {
+  width: 250px;
+  height: 100%; /* 100% Full-height */
+  margin-right: 50px;
+  float: right;
+  position: absolute;
+  top:92px; 
+  right: 0;
+  padding: 0;
+  text-align: left;
+  border: 1px solid red;
+
+}
+
+#sidebartabs{
+  padding: 5px 10px 5px 10px;
+}
+
+
+.flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.flexible-container iframe,
+.flexible-container object,
+.flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.testimonials {
+  position: center;
+}
+
+/*above*/
+
+
+#tabs{
+  position: absolute;
+  top: 12%;
+}
+
+nav{
+  height: 225px;
+  border-bottom: .5px solid gray;
+}
+
+.button {
+    font: Avenir;
+    font-size: 16px;
+    background-color: #263D91;
+    border: none;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #08ADE6;
+}
+
+
+.rectangle{
+  position: relative;
+  right: 5px;
+}
+.blockBody{
+  width:90%;
+  font-size:20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#footer{
+  position: absolute;
+  background-color: #0075C2;
+  height: 225px;
+}
+
+.footerTop{
+  display: inline-block;
+}
+
+#footText{
+  color: white;
+  text-align: left;
+  margin-left: 70px;
+  font-size: 20px;
+  margin-top: 70px;
+}
+
+#footGoodlyLabs{
+  font-size: 25px;
+}
+
+.logos{
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  height: 55px;
+  width: 55px;
+  border-radius: 5px;
+}
+
+#logos{
+  position: relative;
+  bottom: 50px;
+  left: 650px;
+}
+
+input{
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  border-radius: 90px;
+  width:200px;
+  height:28px;
+  position: absolute;
+}
+
+#statement{
+  font-family: Nunito Sans;
+  font-size: 38px;
+  font-weight: 500%;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+#threeStep{
+  color: #0075C2;
+  margin-left: 80px;
+  height: 20px;
+  font-size: 28px;
+  margin-bottom: 120px;
+}
+
+#threeStepBlocks{
+  margin-bottom: 150px;
+}
+
+.circle{
+  border-top: 4px solid #0075C2;
+  border-left: 4px solid #0075C2;
+  border-bottom: 4px solid #0075C2;
+  border-right: 4px solid #0075C2;
+  border-radius: 100px;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  right: 40px;
+  bottom: 40px;
+  text-align: center;
+  background-color: white;
+  font-size: 30px;
+  color: #0075C2;
+}
+
+#topRightLogo{
+  position: relative;
+  width: 120px;
+  height:120px;
+  border-top: 3px solid #08ADE6;
+  border-left: 3px solid #08ADE6;
+  border-bottom: 3px solid #08ADE6;
+  border-right: 3px solid #08ADE6;
+  bottom: 40px;
+  right:25px;
+}
+
+.number{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  top: 40px;
+  font-size: 35px;
+}
+
+.blockHeader{
+  font-size: 30px;
+  position: relative;
+  bottom: 100px;
+  left: 100px;
+
+}

@@ -1,0 +1,55 @@
+body {
+	overflow-x: hidden;
+}
+.donate {
+	margin: 3% 0 3% 41%;
+	font-size: 16px;
+}
+.dropdown {
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+.submit {
+    background-color: white;
+    border: none;
+    color: black
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid #296ebe;
+}
+.submit:hover {
+	background-color: #296ebe;
+	color: white;
+}
+
+.intro p {
+	font-size: 18px;
+	margin: 0 10% 0 10%;
+	padding-bottom: 6px;
+}
+.intro h3 {
+	color: #296ebe;
+	font-weight: bold;
+}
+.volunteer {
+	background-color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.volunteer p{
+	display: inline-block;
+}
+.volunteer span {
+	float: right;
+}
+.demo {
+	margin-left: auto;
+	
+}

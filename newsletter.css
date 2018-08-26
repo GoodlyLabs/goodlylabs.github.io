@@ -1,0 +1,60 @@
+.content {
+	margin: 0 350px 0 100px;
+
+}
+/*read more stuff*/
+.more {
+	display: none;
+}
+
+.more img {
+	width: 60%;
+	margin: auto;
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+a.showLink, a.hideLink {
+	text-decoration: none;
+}
+
+a.showLink {
+	display: block;
+}
+
+a.showLink:hover, a.hideLink:hover {
+}
+
+/*other css*/
+.additional {
+	top: 100px;
+  right: 90px; 
+  position: -webkit-sticky;
+  position: fixed;
+  width: 250px;
+}
+.title {
+	color: #296EBE;
+	font-weight: bolder;
+	font-size: 20px;
+	display: inline-block;
+	margin-top: 0;
+}
+
+.date {
+	float: right;
+	font-weight: bold;
+	font-size: 18px;
+}
+.content p {
+	font-size: 16px;
+}
+br {
+	display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 12px;
+}
+
+.subtitle {
+	margin: 0;
+}

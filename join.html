@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Join Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--fonts-->
+  <link href=“https://fonts.googleapis.com/css?family=Nunito+Sans” rel=“stylesheet”>
+  
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="join.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+
+  
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="header.js"></script>
+</head>
+<body style="font-family: 'Nunito Sans'">
+	<div class="topnav" id="myTopnav">
+    <a href="index.html" >Home</a>
+    <a href="aboutUs.html" >About</a>
+    <a href="project_home.html">Projects</a>
+    <a href="newsletter.html">Newsletter</a>
+    <a href="team.html">Team</a>
+    <a href="#about" class="active">Join Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <img src="images/goodly_logo.png" style="float: right; width: 40px; padding-top: 5px; margin-right: 1%">
+  </div>
+  <div class="intro">
+  	<center><h3>Join Us</h3></center>
+  <p><b>Goodly depends on the participation of people like you.</b></p>
+  <p>Right now, our projects are fueled by the efforts of more than 60 volunteers with a range of backgrounds and experiences. We are ready to accept the help of total beginners, software designers, engineers, social scientists, and non-profit specialists who want to build a better world. Interested in joining? Please email <a href="mailo:info@goodlylabs.org">info@goodlylabs.org</a>.</p>
+  </div>
+	<!-- START PAYPAL FORM -->
+	<div class="donate">
+		<p><big><b>Make a Donation to Goodly Labs</b></big><br/></p>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="accounts@freelanceswitch.com">
+ 
+    <strong>Which project are you donating for?</strong><br />   
+    <select class="dropdown" name="item_number" style="margin: 10px">
+      <option value="PE">Public Editor</option>
+      <option value="DF">Deciding Force</option>
+      <option value="LA">Liberaing Archives</option>
+      <option value="TT">TextThresher</option>
+      <option value="SP">Same Page</option>
+      <option value="DW">DemoWatch</option>
+      <option value="none">No Preference</option>
+    </select>
+ 		<br>
+    <strong>How much would you like to donate?</strong><br />
+    $ <input type="text" name="amount" style="margin:10px 0 10px 0">
+ 
+    <input type="hidden" name="no_shipping" value="0">
+    <input type="hidden" name="no_note" value="1">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="lc" value="AU">
+    <input type="hidden" name="bn" value="PP-BuyNowBF">
+ 
+    <br /><br />
+    <input class="submit" type="submit" value="Pay with PayPal" style="margin:0 0 10px 0">
+ 
+		</form>
+	</div>
+	<div class="volunteer">
+		<hr style="border: 1px solid #a9a9a9; width: 100%;">
+		<center><p style="font-weight: bold; font-size: 20px">Volunteer Work</p></center>
+		<b>Researchers | Deciding Force</b>
+		<p>We are seeking a dozen undergraduate research assistants to perform content analysis on news articles describing police and protester interactions across 184 U.S. Occupy movement campaigns. We would also welcome a graduate student researcher with project management, text analysis, and/or writing and editing experience. </p>
+		<b>Software Developers | Public Editor</b>
+		<p>We are seeking intermediate/advanced interface designers/developers to create a mass collaborative software through which citizen scientists can  ‘objectively’ evaluate the daily news in terms of clarity, argumentative fallacies, failures of inference, and psychological biases. Ideal candidates will be versed in human computer interaction, natural language processing, and/or gamification; and have at least some interface design and development experience.</p>
+		<b>User Experience Researchers | TextThresher</b>
+		<p>We are seeking one or two researchers in Human Computer Interaction to help design and implement User A/B studies to improve the TextThresher user experience. Ideal candidates will work well with a team and a research partner, demonstrate experience designing and implementing previous user studies, and demonstrate a broad and deep understanding of the literatures concerning CSCW, HCI, and/or crowd work.</p>
+		<b>Researchers and Developers | SamePage</b>
+		<p>We are seeking one or two graduate student researchers in the area of democratic deliberation to help us design the online democratic machinery of the future. We are also seeking intermediate and advanced interface designers/developers to help build this platform for online deliberation and direct democracy. Our initial work will entail coordination on a design plan, and re-factoring of some current online deliberation code to make it more visually pleasing and navigable. We will also be working on the design and development of various interfaces for engaging, moderating, and voting upon the elements of online deliberation. Ideal candidates will be versed in HCI, CSCW, and/or deliberation literatures and demonstrate interface design and development experience.</p>
+		<b>Communications Lead | GoodlyLabs</b>
+		<p>We are seeking an advanced undergraduate with great writing skills and impeccable judgment to lead our social media outreach efforts. Responsibilities will include weekly refreshing of Goodly’s webpage content, creating a Goodly Facebook page, writing Facebook posts and tweets about Goodly’s projects, and contributing Goodly’s findings and perspective to ongoing media discourses.</p>
+		<b>StartUp Fundraiser – GoodlyLabs</b>
+		<p>We are seeking an advanced undergraduate and/or early-career fundraising professional to help Goodly target funders, develop pitches, and polish grant proposals. The ideal candidate will not rely on this position for income (at least as we start-up), but will be dedicated to the Goodly mission and happy to receive modest commissions or bonuses for fundraising successes while developing a portfolio of experience.</p>
+		<b>Board of Directors | GoodlyLabs</b>
+		<p>Goodly invites applications to join our Board of Directors. Over the next 12 months, Goodly will appoint up to 20 members to its board. After 6 board meetings during that period, Goodly will announce the 8-20 members who will remain on the board for a 2-year (renewable) term. The ideal board will include people from an array of social, cultural, and geographic backgrounds with experience in community organizing, social science, technology, fundraising, marketing, documentary film-making, foundations, social media outreach, non-profit legal matters, (municipal) governance, management of distributed organizations, and research collaboration. If you’d like to be considered, please send a brief letter of interest to <a href="mailto:info@goodlylabs.org">info@goodlylabs.org</a> with the subject line ‘Joining the Goodly Board.’ We will follow up with promising applicants, encouraging them to send more information and schedule an interview.</p>
+
+		<center><h4 style="padding-top: 20px; padding-bottom: 20px">Please email <a href="mailto:info@goodlylabs.org">info@goodlylabs.org</a> and mention any role you'd like to play. We look forward to working with you!</h4>
+	</div>
+</div>
+<div class = "footer" style="margin: 0">
+      <p class = "text">Goodly Labs</p>
+      <p style="display: inline-block;">UC Berkeley Institute of Data Science</p>
+      <a style="display: inline-block; float: right" href = "https://www.linkedin.com/company/goodlylabs/" target="_blank" class="fa fa-linkedin"></a>
+      <a style="display: inline-block; float: right;" href = "https://www.facebook.com/goodlylabs/" target="_blank" class="fa fa-facebook"></a><br>
+      <a href = "mailto:info@goodlylabs.org" style="color: white">info@goodlylabs.org</a>
+  </div>
+</body>
+</html>

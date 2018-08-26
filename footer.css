@@ -1,0 +1,58 @@
+.footer {
+  background-color: #0075c2;
+  color: white;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  font-size: 18px;
+  line-height: normal;
+  font-family: 'Nunito Sans';
+  margin-top: 20px;
+  bottom: 0;
+  width: 100%;
+}
+
+.text {
+	padding-top: 30px;
+	color: white;
+}
+
+.column {
+	padding-top: 10%;
+	padding-left: 15px;
+	padding-right: 10px;
+	width: 10%;
+	float: right;
+}
+
+.footer .fa {  
+  font-size: 30px !important;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 0px;
+  padding-right: 18px;
+  float: right;
+  color: white;
+
+}
+.footer p{
+	color: white;
+	margin-left: 0;
+}
+
+#footer a:link {
+	color: white !important;
+	font-size: 18px;
+}
+#footer a:visited {
+	color: white;
+}
+#footer a:hover {
+	color: white !important;
+}
+
+.footer a {
+	display: inline-block;
+}
+* {box-sizing: border-box;}

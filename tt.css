@@ -1,0 +1,154 @@
+body {
+  overflow-x: hidden;
+}
+#section-ourTeam {
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+.button {
+    color: black; 
+    padding: 15px;
+    border: 2px solid #0075c2;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s; /*safari*/
+    z-index: 10000;
+}
+.article {
+  font-size: 18px;
+}
+.button:hover {
+  background-color: #0075c2;
+  color: white;
+  text-decoration: none;
+}
+
+.projecthome {
+  top: 100px;
+  right: 90px; 
+  position: -webkit-sticky;
+  position: fixed;
+}
+
+#project_team{
+  display: inline;
+  padding-bottom: 3px;
+  margin-left: 150px;
+  margin-right: 250px;
+}
+
+#project_team:hover {
+  color: #0075c2;
+  top: 10px;
+  cursor: pointer;
+}
+
+#hide:hover {
+  color: #0075c2;
+  cursor: pointer;
+}
+
+#firstHeader {
+  margin-left: 150px;
+  margin-top: 40px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #263D91;
+}
+.vertical-menu {
+    right: 0;
+    margin-top: 50px;
+    width: 200px;
+    font-family: "Avenir Next";
+    position: -webkit-sticky;
+    position: fixed;
+    z-index: 100000;
+}
+
+.vertical-menu a {
+  color: #797A7C;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#link1 {
+  color: black;
+}
+
+#userLink {
+  margin-top: 30px;
+}
+
+#joinLink {
+  color: black;
+}
+
+#involvedLink {
+  color: black;
+}
+
+#developerLink {
+  margin-top: 30px;
+}
+
+#meetLink {
+ color: black;
+}
+
+#hereLink {
+  color: black;
+}
+
+iframe {
+  margin-top: 25px;
+}
+
+#one {
+  margin-top: 65px;
+}
+
+.article p {
+  margin-right: 250px;
+  margin-left: 150px;
+  margin-top: 0px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #0D2657;
+}
+
+
+#firstImage {
+  width: 70%;
+  height: 100%;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#secondHeader {
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 100px;
+}
+.vid {
+  margin-right: 250px;
+  margin-left: 150px;
+  margin-bottom: -3%;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+}

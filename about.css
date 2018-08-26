@@ -1,0 +1,15 @@
+body, html{
+  overflow-x: hidden;
+}
+
+.content {
+  margin-left: 5%;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.content h4 {
+  font-size: 20px;
+  color: #296EBE;
+  font-weight: bold;
+}

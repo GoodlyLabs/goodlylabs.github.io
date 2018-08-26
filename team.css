@@ -1,0 +1,83 @@
+
+.row img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.ourTeam-heading h1{
+    color: #296EBE;
+    font-family: Nunito Sans;
+    padding:20px 0px;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.section1{
+    padding: 30px 0px 0px 0px;
+}
+.section1 img{
+    padding:5px;
+    border-radius:50%;
+    height:170px;
+    width: 170px;
+}
+.section2 h1{
+    font-size:10px;
+    color:#808080;
+    border-bottom:2px solid #08ADE6;
+    display: inline-block;
+    padding: 5px 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.section2 p{
+    font-family: Nunito Sans;
+    display: inline-block;
+    font-weight: 800;
+    color:#16436F;
+    padding: 0px 15px;
+    border-radius: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.section2 span{
+    color:#979597;
+}
+.section2 label{
+    background-color: #5DDDD3;
+    padding: 8px 10px 8px 10px;
+    color:#fff;
+    font-weight: normal;
+    margin: 30px 0px 35px 0px;
+    border-radius: 2px;
+}
+.section3 p{
+    font-size:10px;
+    color:#5D5E5F;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-family: Nunito Sans;
+}
+.section4{
+    padding:10px 0px 10px 0px;
+}
+.section4 i{
+    color:#fff;
+    width: 20px;
+    height: 20px;
+    padding-top:4px;
+    border-radius: 2px; 
+    font-size: 12px;
+    background-color: #08ADE6;
+    cursor: pointer;
+}
+
+.section1 img{
+    padding:5px;
+}
+.section2 p{
+    color:#16436F;
+}
