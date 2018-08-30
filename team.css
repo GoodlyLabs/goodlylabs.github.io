@@ -32,7 +32,7 @@
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.section2 p{
+.section2 p, a{
     font-family: Nunito Sans;
     display: inline-block;
     font-weight: 800;
