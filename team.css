@@ -64,7 +64,7 @@
 .section4{
     padding:10px 0px 10px 0px;
 }
-.section4 i{
+.section4 .fa{
     color:#fff;
     width: 20px;
     height: 20px;
@@ -78,6 +78,10 @@
 .section1 img{
     padding:5px;
 }
-.section2 p{
+.section2 a{
     color:#16436F;
+    font-weight: 800;
+    color:#16436F;
+    padding: 0px 15px;
+    cursor: pointer;
 }
