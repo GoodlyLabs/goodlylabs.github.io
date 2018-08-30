@@ -21,6 +21,7 @@ img {
 	font-weight: 800;
 	text-align: center;
 	padding-top: 30px;
+  border-bottom: #a9a9a9;
 }
 .overlay {
   position: absolute;
