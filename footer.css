@@ -56,3 +56,36 @@
 	display: inline-block;
 }
 * {box-sizing: border-box;}
+
+.partnerlogos {
+	margin-top: 10px;
+}
+
+img.ssrc {
+	max-height: 80px;
+	max-width: 80px;
+}
+img.amplab {
+	max-height: 80px;
+	max-width: 80px;
+}
+img.bids {
+	max-height: 80px;
+	max-width: 80px;
+}
+img.hypothesis {
+	max-height: 80px;
+	max-width: 80px;
+}
+img.nsf {
+	max-height: 80px;
+	max-width: 80px;
+}
+img.sloan {
+	max-height: 80px;
+	max-width: 80px;
+}
+img.sage {
+	max-height: 80px;
+	max-width: 80px;
+}
