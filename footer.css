@@ -1,5 +1,33 @@
+.footer-banner-special {
+    width: 100%;
+    border-style: solid;
+    border-color: #0075C2;
+    background-color: #0075C2;
+}
+
+
+.partnerlogos {
+  background-color: #FFFFFF;
+  color: white;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  font-size: 18px;
+  line-height: normal;
+  font-family: 'Nunito Sans';
+  margin-top: 20px;
+	margin-bottom: -3%;
+  bottom: 0;
+  width: 100%;
+}
+
+.logos-text {
+	padding-top: 20px;
+	color: black;
+}
+
 .footer {
-  background-color: #0075c2;
+  background-color: #223F92;
   color: white;
   padding-left: 40px;
   padding-bottom: 20px;
@@ -62,30 +90,31 @@
 }
 
 img.ssrc {
-	max-height: 80px;
-	max-width: 80px;
+	margin-left: 22%;
+	max-height: 100px;
+	max-width: 100px;
 }
 img.amplab {
-	max-height: 80px;
-	max-width: 80px;
+	max-height: 100px;
+	max-width: 100px;
 }
 img.bids {
-	max-height: 80px;
-	max-width: 80px;
+	max-height: 100px;
+	max-width: 100px;
 }
 img.hypothesis {
-	max-height: 80px;
-	max-width: 80px;
+	max-height: 100px;
+	max-width: 100px;
 }
 img.nsf {
-	max-height: 80px;
-	max-width: 80px;
+	max-height: 100px;
+	max-width: 100px;
 }
 img.sloan {
-	max-height: 80px;
-	max-width: 80px;
+	max-height: 100px;
+	max-width: 100px;
 }
 img.sage {
-	max-height: 80px;
-	max-width: 80px;
+	max-height: 100px;
+	max-width: 100px;
 }
